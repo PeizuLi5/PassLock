@@ -1,8 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<HBox xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+
+<HBox prefHeight="534.0" prefWidth="840.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.LoginPageController">
+   <children>
+      <AnchorPane prefHeight="532.0" prefWidth="423.0">
+         <children>
+            <AnchorPane layoutY="92.0" prefHeight="365.0" prefWidth="842.0" style="-fx-background-color: #95A98F;">
+               <children>
+                  <TextArea layoutX="263.0" layoutY="107.0" prefHeight="69.0" prefWidth="315.0" />
+                  <TextArea layoutX="263.0" layoutY="196.0" prefHeight="69.0" prefWidth="315.0" />
+                  <Text fill="#5e5858" layoutX="164.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email : ">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5e5858" layoutX="124.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : ">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Button accessibleText="LoginButton" layoutX="356.0" layoutY="285.0" mnemonicParsing="false" text="Login" textFill="#2e6ca4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#b92525" layoutX="590.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forget Password?">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#2e6ca4" layoutX="622.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up?">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#2e6ca4" layoutX="294.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login to PassLock">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="58.0" fitWidth="168.0" layoutX="23.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/PassLock.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="165.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms" wrappingWidth="46.708984375">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="283.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Privacy" wrappingWidth="64.85400548577309">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="401.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Security" wrappingWidth="75.20701676607132">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="525.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contac PassLock" wrappingWidth="123.32226571440697">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
 </HBox>
-

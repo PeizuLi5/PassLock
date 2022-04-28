@@ -27,7 +27,7 @@ public class DBUtils{
 		ResultSet result = null;
 		
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/team-02-07", "peizuli", "CS151termproject@");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/team-02-07", "root", "yang123456");
 			checkExists = connection.prepareStatement("SELECT * FROM users WHERE username = ? OR email = ?");
 			checkExists.setString(1, username);
 			checkExists.setString(2, email);	
