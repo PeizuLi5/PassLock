@@ -16,6 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 
+//TODO: Create a checkExpirationDate Method that gives user warning when a password get expired.
 public class LoginPageController implements Initializable{
 
     @FXML
