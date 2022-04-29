@@ -62,6 +62,14 @@ public class LoginPageController implements Initializable{
 		loginButton.setOnMouseClicked(e -> {
 			login(e);
 		});
+		
+		forgetPasswordButton.setOnMouseClicked(e -> {
+			try {
+				DBUtils.changeScene(e, "Reset Password", "view/ResetPassword_Page_1.fxml");
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		});
 	}
 
 	private void setTextFieldEvents() {

@@ -59,6 +59,9 @@ public class RegisterPageController implements Initializable{
     private TextField securityAnswerTextField;
 
     @FXML
+    private Button toLoginButton;
+    
+    @FXML
     private Button cancelButton;
     
     @FXML
@@ -80,6 +83,14 @@ public class RegisterPageController implements Initializable{
 		
 		registerButton.setOnMouseClicked(e -> {
 			registerAccount(e);
+		});
+		
+		toLoginButton.setOnMouseClicked(e -> {
+			try {
+				DBUtils.changeScene(e, "Login", "view/LoginPage.fxml");
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		});
 		
 	}
@@ -117,7 +128,7 @@ public class RegisterPageController implements Initializable{
 			firstname = firstNameTextField.getText().toString();
 			lastname = lastNameTextField.getText().toString();
 			username = usernameTextField.getText().toString();
-			email = emailTextField.getText().toString();
+			email = emailTextField.getText().toLowerCase().toString();
 			password = passwordTextField.getText().toString();
 			securityQuestion = securityQuestionTextField.getText().toString();
 			securityAnswer = securityAnswerTextField.getText().toString();
